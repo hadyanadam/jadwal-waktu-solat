@@ -1,0 +1,22 @@
+{
+  "name": "jws-project",
+  "version": "0.0.1",
+  "description": "Aplikasi untuk melihat waktu solat pada masjid masjid",
+  "main": "app/main.js",
+  "dependencies": {
+    "electron": "^9.0.5"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0",
+    "electron-store": "^5.2.0",
+    "spectre.css": "^0.5.8"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "jws"
+  ],
+  "author": "hadyanadam",
+  "license": "ISC"
+}
