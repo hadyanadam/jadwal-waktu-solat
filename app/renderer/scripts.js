@@ -12,7 +12,7 @@ setJadwal(url);
 function setJadwal(url) {
   axios.get(url)
     .then (response => {
-      let waktu = response.data.jadwal
+      let waktu = response.data.jadwal.data
       document.getElementById('subuh').innerHTML = waktu.subuh
       document.getElementById('dhuha').innerHTML = waktu.dhuha
       document.getElementById('dzuhur').innerHTML = waktu.dzuhur
