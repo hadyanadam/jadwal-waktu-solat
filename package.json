@@ -4,7 +4,11 @@
   "description": "Aplikasi untuk melihat waktu solat pada masjid masjid",
   "main": "app/main.js",
   "dependencies": {
-    "electron": "^9.0.5"
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "electron": "^9.0.5",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1"
   },
   "devDependencies": {
     "electron-reload": "^1.5.0",

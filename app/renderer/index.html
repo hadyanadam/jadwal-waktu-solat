@@ -4,60 +4,80 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0"
         name="viewport">
-  <title>Document</title>
-  <link crossorigin="anonymous"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  <title>Jadwal</title>
+  <link href="asset/vendor/bootstrap.css"
         rel="stylesheet">
+  <link href="style.css"
+        rel="stylesheet"><!-- <script src="asset/vendor/jquery.js"></script>
+  <script src="asset/vendor/popper.js"></script> -->
 </head>
-<body>
-  <div class="container-fluid">
-    <div class="container">
-      <div class="card"
-           id="waktuSubuh">
-        <div class="card-header">
-          Subuh
+<body class="bg">
+  <div class="header">
+    <div class="row h-100">
+      <div class="col text-dark h3">
+        <div class="dateClass">
+          <div id="day"></div>
+          <div id="date"></div>
+          <div>
+            13 DZULQAIDAH 1441
+          </div>
         </div>
-        <div class="card-body"></div>
       </div>
-      <div class="card"
-           id="waktuDzuhur">
-        <div class="card-header">
-          Dzuhur
+      <div class="col text-dark text-center h-100">
+        <div class="h1">
+          MASJID ANNUR
         </div>
-        <div class="card-body"></div>
+        <div class="h4">
+          Jl. Sempur Kaler. Kota Bogor Tengah
+        </div>
+        <div class="h5">
+          0882436213
+        </div>
       </div>
-      <div class="card"
-           id="waktuAshar">
-        <div class="card-header">
-          Ashar
-        </div>
-        <div class="card-body"></div>
-      </div>
-      <div class="card"
-           id="waktuMaghrib">
-        <div class="card-header">
-          Maghrib
-        </div>
-        <div class="card-body"></div>
-      </div>
-      <div class="card"
-           id="waktuIsya">
-        <div class="card-header">
-          Isya
-        </div>
-        <div class="card-body"></div>
+      <div class="col text-dark mr-3">
+        <div class="text-right"
+             id="time"
+             style="font-size: 70px;"></div>
+        <div class="h2 text-right"
+             id="city"></div>
       </div>
     </div>
   </div>
-  <script crossorigin="anonymous"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
-  <script crossorigin="anonymous"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
-  <script crossorigin="anonymous"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <div class="jadwal">
+    <div class="row justify-content-center mr-1 ml-1">
+      <div class="col bg-warning text-dark h1 text-center h-100 m-1 border border-dark">
+        SUBUH
+        <div id="subuh"></div>
+      </div>
+      <div class="col bg-danger h1 text-center h-100 m-1 border border-dark">
+        DHUHA
+        <div id="dhuha"></div>
+      </div>
+      <div class="col bg-success h1 text-center h-100 m-1 border border-dark">
+        DZUHUR
+        <div id="dzuhur"></div>
+      </div>
+      <div class="col bg-primary h1 text-center h-100 m-1 border border-dark">
+        ASHAR
+        <div id="ashar"></div>
+      </div>
+      <div class="col bg-secondary h1 text-center h-100 m-1 border border-dark">
+        MAGHRIB
+        <div id="maghrib"></div>
+      </div>
+      <div class="col bg-warning h1 text-dark text-center h-100 m-1 border border-dark">
+        ISYA
+        <div id="isya"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer h1">
+    <div id="text-information">
+      <marquee behavior="scroll"
+           direction="left">Sebaik-baiknya Tupai Melompat Pasti ada juga yang Jalan.</marquee>
+    </div>
+  </div><!-- <script src="asset/vendor/bootstrap.js"></script>  -->
+  <script src="scripts.js"
+        type="module"></script>
 </body>
 </html>
