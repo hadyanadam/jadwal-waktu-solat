@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0"
-        name="viewport">
-  <title>Jadwal</title>
-  <link href="asset/vendor/bootstrap.css"
-        rel="stylesheet">
-  <link href="style.css"
-        rel="stylesheet"><!-- <script src="asset/vendor/jquery.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jadwal</title>
+    <link href="asset/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- <script src="asset/vendor/jquery.js"></script>
   <script src="asset/vendor/popper.js"></script> -->
-</head>
-<body class="bg">
-  <div class="header">
-    <div class="row h-100">
-      <div class="col text-dark h3">
-        <div class="dateClass">
-          <div id="day"></div>
-          <div id="date"></div>
-          <div>
-            13 DZULQAIDAH 1441
+  </head>
+  <body>
+    <img src="" alt="none" class="bg" id="background" />
+    <div class="header">
+      <div class="row h-100">
+        <div class="col text-dark h3">
+          <div class="dateClass">
+            <div id="day"></div>
+            <div id="date"></div>
+            <div>
+              13 DZULQAIDAH 1441
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col text-dark text-center h-100">
-        <div class="h1">
-          MASJID ANNUR
+        <div class="col text-dark text-center h-100">
+          <div class="h1">
+            MASJID ANNUR
+          </div>
+          <div class="h4">
+            Jl. Sempur Kaler. Kota Bogor Tengah
+          </div>
+          <div class="h5">
+            0882436213
+          </div>
         </div>
-        <div class="h4">
-          Jl. Sempur Kaler. Kota Bogor Tengah
+        <div class="col text-dark mr-3">
+          <div class="text-right" id="time" style="font-size: 70px;"></div>
+          <div class="h2 text-right" id="city"></div>
         </div>
-        <div class="h5">
-          0882436213
-        </div>
-      </div>
-      <div class="col text-dark mr-3">
-        <div class="text-right"
-             id="time"
-             style="font-size: 70px;"></div>
-        <div class="h2 text-right"
-             id="city"></div>
       </div>
     </div>
-  </div>
-  <div class="jadwal">
-    <div class="row justify-content-center mr-1 ml-1">
-      <div class="col bg-warning text-dark h1 text-center h-100 m-1 border border-dark">
-        SUBUH
-        <div id="subuh"></div>
-      </div>
-      <div class="col bg-danger h1 text-center h-100 m-1 border border-dark">
-        DHUHA
-        <div id="dhuha"></div>
-      </div>
-      <div class="col bg-success h1 text-center h-100 m-1 border border-dark">
-        DZUHUR
-        <div id="dzuhur"></div>
-      </div>
-      <div class="col bg-primary h1 text-center h-100 m-1 border border-dark">
-        ASHAR
-        <div id="ashar"></div>
-      </div>
-      <div class="col bg-secondary h1 text-center h-100 m-1 border border-dark">
-        MAGHRIB
-        <div id="maghrib"></div>
-      </div>
-      <div class="col bg-warning h1 text-dark text-center h-100 m-1 border border-dark">
-        ISYA
-        <div id="isya"></div>
+    <div class="jadwal">
+      <div class="row justify-content-center mr-1 ml-1">
+        <div
+          class="col bg-warning text-dark h1 text-center h-100 m-1 border border-dark"
+        >
+          SUBUH
+          <div id="subuh"></div>
+        </div>
+        <div class="col bg-danger h1 text-center h-100 m-1 border border-dark">
+          DHUHA
+          <div id="dhuha"></div>
+        </div>
+        <div class="col bg-success h1 text-center h-100 m-1 border border-dark">
+          DZUHUR
+          <div id="dzuhur"></div>
+        </div>
+        <div class="col bg-primary h1 text-center h-100 m-1 border border-dark">
+          ASHAR
+          <div id="ashar"></div>
+        </div>
+        <div
+          class="col bg-secondary h1 text-center h-100 m-1 border border-dark"
+        >
+          MAGHRIB
+          <div id="maghrib"></div>
+        </div>
+        <div
+          class="col bg-warning h1 text-dark text-center h-100 m-1 border border-dark"
+        >
+          ISYA
+          <div id="isya"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer h1">
-    <div id="text-information">
-      <marquee behavior="scroll"
-           direction="left">Sebaik-baiknya Tupai Melompat Pasti ada juga yang Jalan.</marquee>
+    <div class="footer h1">
+      <div id="text-information">
+        <marquee behavior="scroll" direction="left" id="text"></marquee>
+      </div>
     </div>
-  </div><!-- <script src="asset/vendor/bootstrap.js"></script>  -->
-  <script src="scripts.js"
-        type="module"></script>
-</body>
+    <!-- <script src="asset/vendor/bootstrap.js"></script>  -->
+    <script src="./asset/js/scripts.js" type="module"></script>
+  </body>
 </html>
